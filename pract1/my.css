@@ -1,0 +1,90 @@
+.table {
+  border: 1px solid white;
+  border-collapse: separate;
+  border-spacing: 5px;
+  margin: 20px;
+    table-layout: fixed;
+  width: max-content; 
+}
+.table td {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    color: white;
+
+}
+.table td.Teal{
+    background-color: rgba(6, 166, 157);      
+    color: white;
+}
+.table td.yellow-green{
+    background-color: rgba(159, 184, 44);      
+    color: white;
+}
+.table td.pink{
+    background-color: rgba(255, 85, 122);      
+    color: white;
+}
+.table td.green{
+    background-color: rgba(79, 132, 45);      
+    color: white;
+}
+.table td.brown{
+    background-color: rgba(220, 77, 12);      
+    color: white;
+}
+
+.star{
+    font-size: 24px;
+    text-align: center;
+    vertical-align: middle; 
+    line-height: 1;
+}
+
+.nums{
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle; 
+}
+
+.table td.orange{
+    background-color: rgba(254, 163, 2);
+    color: white;
+    
+}
+.table td.Dodger-Blue{
+    background-color: rgba(67, 144, 248);
+    color: white;
+    
+}
+.table td.blue{
+    background-color: rgba(31, 79, 198);
+    color: white;
+    
+}
+.table td.gray{
+    background-color: rgba(124, 132, 138);
+    color: white;
+}
+.table td.red{
+    background-color: rgba(227, 28, 52);
+    color: white;
+    
+}
+.table td.purple{
+    background-color: rgba(97, 59, 209);
+    color: white;
+}
+.letter {
+  font-size: 24px;           
+  text-align: center; 
+  font-weight: bold;
+  line-height: 1;         
+}
+.text {
+  font-size: 10px;     
+  line-height: 1.2;      
+  text-align: center;          
+  margin-top: 2px;
+}
+
