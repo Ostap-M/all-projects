@@ -4,16 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pract2task1.css">
-
-
-
     <title>Practice 2 Task 1</title>
   </head>
   <body>
 
     <div class="main-wrapper">
         
-
+        <!-- Навігаційне меню -->
         <nav class="nav-menu">
             <span class="nav-item">Home</span>
             <span class="nav-item">Landing</span>
@@ -23,11 +20,9 @@
             <span class="nav-item">Contact</span>
         </nav>
 
-     
+        <!-- Головний банер (Hero) -->
         <div class="image-container">
             <img class="photo" src="images/la.jpeg" alt="Latest projects">
-            
-        
             <div class="hero-content">
                 <h1>Latest projects</h1>
                 <p>Sample text. Click to select the text element.</p>
@@ -38,85 +33,35 @@
                 </div>
             </div>
         </div>
-        <p class="name">New York</p>
-        <div class="image-container">
-          
-            <img class="photo" src="images/pexels-photo-325185.jpeg" alt="New York"> 
-          
-          
-          </div>
-          <div class="image-container2">
-          
-            <img class="qphoto" src="images/house-isolated-field.jpg" alt="Photo">
-            <img class="qphoto" src="images/apartment-building-city-with-copy-space.jpg" alt="Photo">
-            <img class="qphoto" src="images/pexels-photo-325185.jpeg" alt="Photo">
-            <img class="qphoto" src="images/pexels-photo-3874015.jpeg" alt="Photo">
-            <img class="qphoto" src="images/pexels-photo-3855622.jpeg" alt="Photo">
-            <img class="qphoto" src="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" alt="Photo">
-</div>
-<div class="image-container3">
-  <img src="images/wooden-keychain-white.jpg" alt="Photo">
-  <div aria-hidden="true">              <div class="hero-content2">
-                <h2>Trusted By Best Exclusive Agents</h2>
-                <p1>Sample text. Click to select the text element.</p1>
-              </div></div>
-
-</div>
-
-
-
-
-
-
-
-
-                  <p class="name">Exclusive Apartments</p>
-        <div class="image-container">
-          
-            <img class="photo" src="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" alt="Exclusive Apartments"> 
-          
-          
-          </div>
-
-
-          
-
-
-
-
     </div>
 
-
-
+    <!-- 1. Перша рожева секція з круглими містами (одразу після першого фото) -->
     <section class="locations-section">
-  <div class="locations-container">
-    
+      <div class="locations-container">
+        
+        <div class="location-card">
+          <div class="image-wrapper">
+            <img src="images/paris.jpeg" alt="Paris">
+          </div>
+          <h3>Paris</h3>
+          <p>10 Property</p>
+        </div>
 
-    <div class="location-card">
-      <div class="image-wrapper">
-        <img src="images/paris.jpeg" alt="Paris">
-      </div>
-      <h3>Paris</h3>
-      <p>10 Property</p>
-    </div>
+        <div class="location-card">
+          <div class="image-wrapper">
+            <img src="images/pexels-photo-325185.jpeg" alt="New York">
+          </div>
+          <h3>New York</h3>
+          <p>40 Property</p>
+        </div>
 
-
-    <div class="location-card">
-      <div class="image-wrapper">
-        <img src="images/pexels-photo-325185.jpeg" alt="New York">
-      </div>
-      <h3>New York</h3>
-      <p>40 Property</p>
-    </div>
-
-
-    <div class="location-card">
-      <div class="image-wrapper">
-        <img src="images/la.jpeg" alt="Los Angeles">
-      </div>
-      <h3>Los Angeles</h3>
-      <p>34 Property</p>
-    </div>
+        <div class="location-card">
+          <div class="image-wrapper">
+            <img src="images/la.jpeg" alt="Los Angeles">
+          </div>
+          <h3>Los Angeles</h3>
+          <p>34 Property</p>
+        </div>
 
         <div class="location-card">
           <div class="image-wrapper">
@@ -126,7 +71,6 @@
           <p>20 Property</p>
         </div>
 
-
         <div class="location-card">
           <div class="image-wrapper">
             <img src="images/pexels-photo-2090651.jpeg" alt="Verona">
@@ -135,7 +79,6 @@
           <p>60 Property</p>
         </div>
 
-      
         <div class="location-card">
           <div class="image-wrapper">
             <img src="images/pexels-photo-1769369.jpeg" alt="Tokio">
@@ -146,6 +89,71 @@
 
       </div>
     </section>
+
+    <div class="main-wrapper">
+
+        <!-- Секція міст (New York та фото) -->
+        <p class="name">New York</p>
+        <div class="image-container">
+            <img class="photo" src="images/pexels-photo-325185.jpeg" alt="New York"> 
+        </div>
+
+        <!-- Галерея 2x3 -->
+        <div class="image-container2">
+            <img class="qphoto" src="images/house-isolated-field.jpg" alt="Photo">
+            <img class="qphoto" src="images/apartment-building-city-with-copy-space.jpg" alt="Photo">
+            <img class="qphoto" src="images/pexels-photo-325185.jpeg" alt="Photo">
+            <img class="qphoto" src="images/pexels-photo-3874015.jpeg" alt="Photo">
+            <img class="qphoto" src="images/pexels-photo-3855622.jpeg" alt="Photo">
+            <img class="qphoto" src="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" alt="Photo">
+        </div>
+
+        <!-- Блок із ключами та списком агентів -->
+        <div class="image-container3">
+            <img src="images/wooden-keychain-white.jpg" alt="Photo">
+            <div class="hero-content2">
+                <h2>Trusted By Best Exclusive Agents</h2>
+                <p>Sample text. Click to select the text element.</p>
+                <ul>
+                    <li>Find local best deals</li>
+                    <li>Friendly host & 24/7 support</li>
+                    <li>List your own property</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Секція Exclusive Apartments -->
+        <p class="name">Exclusive apartments</p>
+        <div class="image-container">
+            <img class="photo" src="images/low-angle-shot-facade-white-modern-building-blue-clear-sky.jpg" alt="Exclusive Apartments"> 
+        </div>
+
+    </div>
+
+    <!-- 2. Друга рожева секція (Get Your Dream House з полями вводу) -->
+    <section class="locations-section subscribe-section">
+      <div class="subscribe-container">
+        <h2>Get Your Dream House</h2>
+        <p class="subscribe-subtitle">Sample text. Click to select the text element.</p>
+        
+        <div class="subscribe-form">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your Name" readonly>
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter a valid email address" readonly>
+            </div>
+            <button>Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+      <p>Sample text. Click to select the text element.</p>
+    </footer>
 
   </body>
 </html>
