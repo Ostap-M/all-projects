@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text to cut-out letters</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="toolbar">
+    <label class="visually-hidden" for="source-text">Текст для перетворення</label>
+    <textarea id="source-text" rows="2" spellcheck="false" placeholder=""></textarea>
+    <button id="go" class="button-17" type="button">convert</button>
+  </header>
+
+  <main class="container" aria-live="polite" aria-label="Текст у вигляді вирізаних літер">
+    <div id="result-text" class="result-text"></div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
