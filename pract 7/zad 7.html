@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дев’ять простих онлайн-калькуляторів з геометрії та математики.">
+  <title>Практична робота 7 — калькулятори</title>
+  <link rel="stylesheet" href="zad 7.css">
+  <script src="zad 7.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <p class="eyebrow">Практична робота 7</p>
+    <h1>Математичні калькулятори</h1>
+    <p class="intro">Обери задачу, введи значення та отримай результат.</p>
+  </header>
+
+  <main class="calculator-grid">
+    <section class="calculator-card" aria-labelledby="task-1-title">
+      <p class="task-number">Завдання 01</p>
+      <h2 id="task-1-title">Площа за трьома сторонами</h2>
+      <p class="formula">Формула Герона: S = √(p(p − a)(p − b)(p − c))</p>
+      <form data-calculator="heron" novalidate>
+        <div class="field-row">
+          <label>Сторона a <input name="a" type="number" min="0" step="any" placeholder="Наприклад, 5"></label>
+          <label>Сторона b <input name="b" type="number" min="0" step="any" placeholder="Наприклад, 6"></label>
+          <label>Сторона c <input name="c" type="number" min="0" step="any" placeholder="Наприклад, 7"></label>
+        </div>
+        <button type="submit">Обчислити площу</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-2-title">
+      <p class="task-number">Завдання 02</p>
+      <h2 id="task-2-title">Площа за двома сторонами й кутом</h2>
+      <p class="formula">S = ½ab · sin(γ). Кут вводиться у градусах.</p>
+      <form data-calculator="sides-angle" novalidate>
+        <div class="field-row">
+          <label>Сторона a <input name="a" type="number" min="0" step="any" placeholder="Сторона a"></label>
+          <label>Сторона b <input name="b" type="number" min="0" step="any" placeholder="Сторона b"></label>
+          <label>Кут γ <input name="angle" type="number" min="0" max="180" step="any" placeholder="У градусах"></label>
+        </div>
+        <button type="submit">Обчислити площу</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-3-title">
+      <p class="task-number">Завдання 03</p>
+      <h2 id="task-3-title">Площа за стороною та висотою</h2>
+      <p class="formula">S = ½ah</p>
+      <form data-calculator="base-height" novalidate>
+        <div class="field-row two-fields">
+          <label>Основа a <input name="base" type="number" min="0" step="any" placeholder="Довжина основи"></label>
+          <label>Висота h <input name="height" type="number" min="0" step="any" placeholder="Висота до основи"></label>
+        </div>
+        <button type="submit">Обчислити площу</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-4-title">
+      <p class="task-number">Завдання 04</p>
+      <h2 id="task-4-title">Площа за стороною та висотою</h2>
+      <p class="formula">S = ½ah</p>
+      <form data-calculator="base-height" novalidate>
+        <div class="field-row two-fields">
+          <label>Основа a <input name="base" type="number" min="0" step="any" placeholder="Довжина основи"></label>
+          <label>Висота h <input name="height" type="number" min="0" step="any" placeholder="Висота до основи"></label>
+        </div>
+        <button type="submit">Обчислити площу</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-5-title">
+      <p class="task-number">Завдання 05</p>
+      <h2 id="task-5-title">Площа за сторонами й радіусом</h2>
+      <p class="formula">Для радіуса описаного кола: S = abc / 4R</p>
+      <form data-calculator="circumradius" novalidate>
+        <div class="field-row">
+          <label>Сторона a <input name="a" type="number" min="0" step="any" placeholder="Сторона a"></label>
+          <label>Сторона b <input name="b" type="number" min="0" step="any" placeholder="Сторона b"></label>
+          <label>Сторона c <input name="c" type="number" min="0" step="any" placeholder="Сторона c"></label>
+        </div>
+        <label>Радіус описаного кола R <input name="radius" type="number" min="0" step="any" placeholder="Радіус кола"></label>
+        <button type="submit">Обчислити площу</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-6-title">
+      <p class="task-number">Завдання 06</p>
+      <h2 id="task-6-title">Перевірка числа на паліндром</h2>
+      <p class="formula">Число читається однаково зліва направо й справа наліво.</p>
+      <form data-calculator="palindrome" novalidate>
+        <label>Ціле число <input name="number" type="text" inputmode="numeric" autocomplete="off" placeholder="Наприклад, 12321"></label>
+        <button type="submit">Перевірити число</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-7-title">
+      <p class="task-number">Завдання 07</p>
+      <h2 id="task-7-title">Перевірка на анаграму</h2>
+      <p class="formula">Чи можна з усіх букв першого слова скласти друге?</p>
+      <form data-calculator="anagram" novalidate>
+        <div class="field-row two-fields">
+          <label>Перше слово <input name="first" type="text" autocomplete="off" placeholder="Перше слово"></label>
+          <label>Друге слово <input name="second" type="text" autocomplete="off" placeholder="Друге слово"></label>
+        </div>
+        <button type="submit">Перевірити слова</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-8-title">
+      <p class="task-number">Завдання 08</p>
+      <h2 id="task-8-title">Число Фібоначчі за номером</h2>
+      <p class="formula">Нумерація починається з 1: 1, 1, 2, 3, 5, 8…</p>
+      <form data-calculator="fibonacci-index" novalidate>
+        <label>Порядковий номер <input name="index" type="number" min="1" max="10000" step="1" placeholder="Наприклад, 10"></label>
+        <button type="submit">Знайти число</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+
+    <section class="calculator-card" aria-labelledby="task-9-title">
+      <p class="task-number">Завдання 09</p>
+      <h2 id="task-9-title">Перевірка числа Фібоначчі</h2>
+      <p class="formula">Перевір, чи входить ціле число до послідовності Фібоначчі.</p>
+      <form data-calculator="fibonacci-member" novalidate>
+        <label>Ціле число <input name="number" type="text" inputmode="numeric" autocomplete="off" placeholder="Наприклад, 34"></label>
+        <button type="submit">Перевірити число</button>
+        <output class="result" aria-live="polite"></output>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">Практична робота 7 · Калькулятори</footer>
+</body>
+</html>
