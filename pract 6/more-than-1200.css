@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+html, body { width: 100%; min-height: 100%; margin: 0; }
+body { background: #100e0c; color: #fff; font-family: Georgia, "Times New Roman", serif; }
+.hero {
+  position: relative;
+  min-height: 920px;
+  height: 100vh;
+  overflow: hidden;
+  background: #17110e url("images/FFTablet_1100x.progressive.webp") center center / cover no-repeat;
+}
+.hero::before { position: absolute; inset: 0; background: rgb(0 0 0 / 10%); content: ""; }
+.header { position: absolute; z-index: 2; top: 0; right: 4%; left: 4%; height: 122px; }
+.navigation { position: relative; display: flex; height: 100%; align-items: center; justify-content: space-between; }
+.nav-links { display: flex; align-items: center; gap: clamp(28px, 3vw, 54px); }
+.navigation a { color: #fff; font: 700 13px/1 Arial, sans-serif; letter-spacing: 2px; text-decoration: none; text-transform: uppercase; white-space: nowrap; }
+.navigation .brand { position: absolute; top: 31px; left: 50%; display: block; width: 44px; height: 60px; transform: translateX(-50%); }
+.brand img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.project-link { display: flex; width: 214px; height: 56px; align-items: center; justify-content: center; border: 2px solid #fff; letter-spacing: 2.4px !important; }
+.intro { position: absolute; z-index: 1; top: 14.8%; left: 3.8%; width: 92.4%; text-align: center; }
+.intro h1 { margin: 0; font: 400 clamp(124px, 16.8vw, 224px)/.95 "Bodoni 72", Didot, Georgia, serif; letter-spacing: -.055em; text-transform: uppercase; white-space: nowrap; }
+.tagline { margin: 27px 0 0; font-size: 16px; font-weight: 700; letter-spacing: .36em; line-height: 1.5; text-transform: uppercase; }
+.tagline span { padding: 0 .35em; }
+.lower-content { position: absolute; z-index: 1; right: 4%; bottom: 7.5%; left: 4%; display: flex; align-items: flex-end; justify-content: space-between; }
+.description { width: 350px; margin: 0 0 6px 1.5%; font-size: 26px; line-height: 1.36; }
+.emblems { display: block; width: 225px; height: auto; margin: 0 1.5% 0 0; }
+.scroll-mark { position: absolute; left: 50%; bottom: 26px; width: 104px; height: 104px; transform: translateX(-50%); }
+.scroll-mark svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.scroll-mark text { fill: #fff; font: 10px Arial, sans-serif; letter-spacing: 3.2px; }
+.scroll-mark .arrow { fill: none; stroke: #fff; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-height: 760px) and (min-width: 1201px) {
+  .hero { min-height: 760px; }
+  .intro { top: 15%; }
+  .intro h1 { font-size: clamp(110px, 15vw, 180px); }
+  .description { font-size: 22px; }
+}
