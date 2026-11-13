@@ -132,13 +132,13 @@ button {
 @keyframes hero-copy {
     0% {
         opacity: 0;
-        transform: translateY(28px);
+        transform: translateX(-220px);
         filter: blur(5px);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
         filter: blur(0);
     }
 }
@@ -231,7 +231,7 @@ h1 em {
 @keyframes bottle {
     0% {
         opacity: 0;
-        transform: translateY(45px) scale(.88);
+        transform: translateY(-90px) scale(.88);
         filter: blur(8px);
     }
 
