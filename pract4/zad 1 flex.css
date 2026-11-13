@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+:root { --page-bg: #e7e7e7; --accent: #f58200; --ink: #111; }
+body {
+  margin: 0; min-height: 100vh; background: var(--page-bg); color: var(--ink);
+  font-family: "Arial Narrow", "Liberation Sans Narrow", "Roboto Condensed", Arial, sans-serif;
+}
+.page { width: min(912px, calc(100% - 48px)); margin: 0 auto; padding: 37px 0 24px; }
+.intro { margin-bottom: 33px; text-align: center; }
+h1 { margin: 0; font-size: clamp(29px, 4vw, 46px); line-height: 1.2; font-weight: 300; letter-spacing: .2px; }
+.intro p { margin: 17px 0 0; color: #333; font: 13px/1.4 Arial, sans-serif; }
+.mosaic { display: flex; flex-direction: column; height: min(651px, 71.4vw); min-height: 440px; overflow: hidden; }
+.mosaic-top { display: flex; flex: 0 0 51.2%; height: 51.2%; min-height: 0; }
+.tile { min-width: 0; min-height: 0; margin: 0; overflow: hidden; }
+.team-photo { flex: 0 0 50%; height: 100%; }
+.top-right { display: flex; flex: 0 0 50%; height: 82.2265625%; }
+.stat-projects, .engineer-photo { flex: 0 0 50%; height: 100%; }
+.mosaic-bottom { position: relative; top: -9.1%; display: flex; flex: 0 0 57.9%; height: 57.9%; min-height: 0; }
+.builder-photo, .stat-years { flex: 0 0 25%; height: 100%; }
+.consultant-photo { flex: 0 0 50%; height: 100%; }
+.tile img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.stat { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px; text-align: center; }
+.stat-projects { background: #fff; }
+.stat-years { background: var(--accent); color: #fff; }
+.stat strong { font-size: clamp(36px, 5vw, 58px); line-height: 1; font-weight: 700; }
+.stat-projects strong { color: var(--accent); }
+.stat span { margin-top: 20px; font-size: clamp(14px, 1.5vw, 18px); }
+.stat-years span { font-weight: 600; }
+footer { margin-top: 18px; color: #333; font: 13px/1.5 Arial, sans-serif; text-align: center; }
+@media (max-width: 650px) {
+  .page { width: min(500px, calc(100% - 28px)); padding-top: 28px; }
+  .intro { margin-bottom: 24px; }
+  .intro p { margin-top: 10px; }
+  .mosaic { display: flex; height: auto; min-height: 0; overflow: visible; gap: 8px; }
+  .mosaic-top { display: flex; flex: none; flex-direction: column; gap: 8px; }
+  .team-photo { flex: none; width: 100%; height: 240px; }
+  .team-photo img { object-position: center 22%; }
+  .top-right { display: flex; flex: none; width: 100%; height: 160px; gap: 8px; }
+  .stat-projects, .engineer-photo { flex: 1 1 0; height: 100%; }
+  .mosaic-bottom { position: static; display: flex; flex: none; flex-wrap: wrap; width: 100%; gap: 8px; }
+  .builder-photo, .stat-years { flex: 1 1 calc(50% - 4px); height: 230px; }
+  .consultant-photo { flex: 1 1 100%; height: 230px; }
+  .engineer-photo img { object-position: center 18%; }
+  .builder-photo img { object-position: center 15%; }
+  .consultant-photo img { object-position: center 18%; }
+}
+@media (max-width: 380px) {
+  .team-photo { height: 200px; }
+  .top-right { height: 140px; }
+  .builder-photo, .stat-years { height: 190px; }
+  .consultant-photo { height: 200px; }
+  .stat { padding: 8px; }
+  .stat span { margin-top: 12px; }
+}
